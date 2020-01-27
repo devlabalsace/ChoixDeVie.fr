@@ -4,11 +4,15 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>DevLabAlsace.LifeChoices.Web</RootNamespace>
     <AssemblyName>DevLabAlsace.LifeChoices.Web</AssemblyName>
+    <UserSecretsId>bc9e0a64-a2ee-469f-9b78-b0289f604035</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc1-11459" />
-    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-rc1-11459" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.0.0-rc1-11653" />
+    <PackageReference Include="OrchardCore.Logging.NLog" Version="1.0.0-rc1-11653" />
   </ItemGroup>
 
 </Project>
