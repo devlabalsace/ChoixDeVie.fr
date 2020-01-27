@@ -10,7 +10,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ../../NuGet.config ./
+COPY NuGet.config ./
 COPY ["src/LifeChoices.Web/LifeChoices.Web.csproj", "src/LifeChoices.Web/"]
 RUN dotnet restore "src/LifeChoices.Web/LifeChoices.Web.csproj"
 COPY . .
