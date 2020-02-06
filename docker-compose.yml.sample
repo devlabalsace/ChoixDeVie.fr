@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+    web:
+        build: ./src/LifeChoices.Web
+        image: choixdevie
+        ports:
+            - "5010:80"
+        depends_on:
+            - db
+    db:
+        image: "mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04"
+        environment:
+            SA_PASSWORD: "[YOUR_MSSQL_SA_PASSWORD]"
+            ACCEPT_EULA: "Y"
