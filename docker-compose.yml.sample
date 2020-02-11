@@ -2,6 +2,7 @@ version: "3.5"
 services:
     web:
         build: ./src/LifeChoices.Web
+        dockerfile: Dockerfile-compose
         image: choixdevie
         ports:
             - "5010:80"
